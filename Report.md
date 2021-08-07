@@ -26,6 +26,20 @@ Here are the results of the experiment.
 
 This seems similar to a recent [controversy](https://www.buzzfeednews.com/article/ikrd/vanessa-nakate-greta-thunberg-davos) involving a Ugandan activist who was cropped out of a news agency photograph.
 
+2. **Manipulating Image Saliency by adding Image Artifacts**
+
+I used the [Fatkun Chrome Extension](https://chrome.google.com/webstore/detail/fatkun-batch-download-ima/nnjjahlikiabnchcpehcpkdeckfgnohf?hl=en) to download png images of objects like guns, handcuffs, luxury/cheap cars, expensive watches, etc. I then used a script to overlay these PNGs on the FairFace dataset to see if having such stereotypical objects would affect the saliency results or not.
+
+Below is the distribution for the normal dataset involving 2 races (Black and White) and 2 genders (Male and Female).
+
+![h21](https://github.com/PotatoSpudowski/twitter-image-crop-analysis/blob/main/images/harm2-2.png)
+
+Now by creating manipulated images as shown below, I ran multiple experiments.
+
+![h22](https://github.com/PotatoSpudowski/twitter-image-crop-analysis/blob/main/images/harm2-1.png)
+
+
+
 
 ## Evidence/Reproducibility:
 
