@@ -145,9 +145,11 @@ Below are some cherry picked examples of male gaze analysis for in the wild imag
 The red crop is the crop based on saliency score and the yellow crop is the crop based on saliency score converted into probability.
 
 ![h41](https://github.com/PotatoSpudowski/twitter-image-crop-analysis/blob/main/images/harm4-1.png)
+
 The red crop gets it right. The yellow crop not so much. 
 
 ![h42](https://github.com/PotatoSpudowski/twitter-image-crop-analysis/blob/main/images/harm4-2.png)
+
 Based on a few other images as well, it seems like mirror selfies with the phone at shoulder height have a lot saliency at the body part and may sometimes contribute to cropping of the body region instead of the face. Especially if the phone and the top wear contrast each other.
 
 Few more examples
