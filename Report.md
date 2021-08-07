@@ -2,7 +2,7 @@
 Bahushruth
 
 ## About You:
-Hi, my name is Bahushruth. I recently graduated from "Manipal University, Jaipur" with a bachelors in Computer and communication engineering. I am currently a GRM Research Intern at IBM Research India. My research interests lie in NLP, Multimodal Research, Social Network Analysis, and AI Ethics. To know more about me, check my [portfolio](https://bahushruth.in) :)
+Hi, my name is Bahushruth. I recently graduated from with a bachelors in Computer and communication engineering. I am currently a GRM Research Intern at IBM Research India. My research interests lie in NLP, Multimodal Research, Social Network Analysis, and AI Ethics. To know more about me, check my [portfolio](https://bahushruth.in) :)
 
 ## Readme:
 Below are the list of different experiments performed and harms identified. 
