@@ -5,6 +5,17 @@ This repo is based off of the work done by [Twitter research](https://github.com
 My report for the [Twitter Algorithmic bias Bounty challenge](https://hackerone.com/twitter-algorithmic-bias?type=team&view_policy=true) can be found [here](Report.md).
 
 
+# Required Datsets
+
+* [FairFace: Face Attribute Dataset for Balanced Race, Gender, and Age](https://github.com/joojs/fairface)
+
+* PNG Artifact images of guns, handcuffs, luxury watches, etc were downloaded using [Fatkun Chrome Extension](https://chrome.google.com/webstore/detail/fatkun-batch-download-ima/nnjjahlikiabnchcpehcpkdeckfgnohf?hl=en). Link to the [dataset](https://drive.google.com/file/d/1KHOMhNPyslhr5UggtL4z2GTZ-2JjQ5Bt/view?usp=sharing).
+
+* **Visual Images to BMI dataset** was obtained from contacting the authors of the [paper](https://ieeexplore.ieee.org/document/8666768)
+
+Download all the dataset files and extract them in the data folder to perform all the experiments.
+
+
 
 # Instructions
 
