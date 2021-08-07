@@ -1,6 +1,7 @@
 # Image Crop Analysis
 
 This repo is based off of the work done by [Twitter research](https://github.com/twitter-research/image-crop-analysis). 
+
 My report for the [Twitter Algorithmic bias Bounty challenge](https://hackerone.com/twitter-algorithmic-bias?type=team&view_policy=true) can be found [here](Report.md).
 
 
