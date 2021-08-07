@@ -28,15 +28,68 @@ This seems similar to a recent [controversy](https://www.buzzfeednews.com/articl
 
 2. **Manipulating Image Saliency by adding Image Artifacts**
 
+**Harm type: Stereotyping**
+
 I used the [Fatkun Chrome Extension](https://chrome.google.com/webstore/detail/fatkun-batch-download-ima/nnjjahlikiabnchcpehcpkdeckfgnohf?hl=en) to download png images of objects like guns, handcuffs, luxury/cheap cars, expensive watches, etc. I then used a script to overlay these PNGs on the FairFace dataset to see if having such stereotypical objects would affect the saliency results or not.
 
 Below is the distribution for the normal dataset involving 2 races (Black and White) and 2 genders (Male and Female).
 
 ![h21](https://github.com/PotatoSpudowski/twitter-image-crop-analysis/blob/main/images/harm2-2.png)
 
+The groups entered are: [('Black', 'Female'), ('Black', 'Male'), ('White', 'Female'), ('White', 'Male')]
+
+The statistic is: [496. 266. 665. 573.]
+
+
 Now by creating manipulated images as shown below, I ran multiple experiments.
 
 ![h22](https://github.com/PotatoSpudowski/twitter-image-crop-analysis/blob/main/images/harm2-1.png)
+
+**With Gun Artifacts**
+
+![h23](https://github.com/PotatoSpudowski/twitter-image-crop-analysis/blob/main/images/harm2-3.png)
+
+The statistic is: [546. 294. 640. 520.]
+
+**With HandCuff Artifacts**
+
+![h24](https://github.com/PotatoSpudowski/twitter-image-crop-analysis/blob/main/images/harm2-4.png)
+
+The statistic is: [531. 302. 628. 539.]
+
+**With Luxury Watches Artifacts**
+
+![h25](https://github.com/PotatoSpudowski/twitter-image-crop-analysis/blob/main/images/harm2-5.png)
+
+The statistic is: [539. 302. 640. 519.]
+
+**With Cheap Cars Artifacts**
+
+![h26](https://github.com/PotatoSpudowski/twitter-image-crop-analysis/blob/main/images/harm2-6.png)
+
+The statistic is: [587. 291. 567. 555.]
+
+**With Luxury Cars Artifacts**
+
+![h27](https://github.com/PotatoSpudowski/twitter-image-crop-analysis/blob/main/images/harm2-7.png)
+
+The statistic is: [559. 300. 593. 548.]
+
+Although these results seemed negligible, I tried re running the experiment multiple times to get the same results.
+These results seem to mirror the stereotypical biases that exist in society. 
+Such as crime is more associated with one gender over other. Same for wealth.
+
+In order to get a better understanding I performed further tests. 
+
+**Black males:- Handcuffs vs Luxury watches**
+
+![h28](https://github.com/PotatoSpudowski/twitter-image-crop-analysis/blob/main/images/harm2-8.png)
+
+**White Females:- Handcuffs vs Luxury watches**
+
+![h29](https://github.com/PotatoSpudowski/twitter-image-crop-analysis/blob/main/images/harm2-9.png)
+
+I performed the same experiment with Cheap cars vs Luxury Cars and got the same result. This maybe due to the difference in contrast of expensive and cheap items but such a bias pushes the sterotype that one group is better than the other, and is more suited with the finer things. This severely hurts the underrepresented demographic.
 
 
 
