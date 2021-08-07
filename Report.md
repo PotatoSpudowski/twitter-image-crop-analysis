@@ -105,8 +105,10 @@ Similar to the bias analysis based on gender and race, I performed bias analysis
 
 Body Types:
 
-N-0 = Normal,  
+N-0 = Normal, 
+
 O-b = Obese, 
+
 O-v = Overweight
 
 ![h31](https://github.com/PotatoSpudowski/twitter-image-crop-analysis/blob/main/images/harm3-1.png)
@@ -122,7 +124,37 @@ What about for men? Is it the same?
 
 For men, the algorithm gives the least priority to obese body types. 
 
-It is important to ensure that such algorithms are not biased based on body types because they consider certain body types as central human norms. Lots of people suffer from body insecurity and such a harm would only amplify the insecurity of the users.
+It is important to ensure that such algorithms are not biased based on body types because they consider certain body types as central human norms. Lots of people suffer from body insecurity and such a harm would only amplify the insecurity of the users. Link to [notebook](https://github.com/PotatoSpudowski/twitter-image-crop-analysis/blob/main/notebooks/Demographic-Bias-Analysis-BMI.ipynb) to recreate the experiment.
+
+*********
+
+4. **'Male Gaze' further analysis**
+
+**Harm type: Other / Wild-Card**
+
+This experiment was an extension of Twitter's work. I was curious to see what other body artifacts contribute to male gaze. I was also interested in seeing if different types of clothing contribute to male gaze. So I used the **Visual Image to BMI** and created a small dataset of 4 classes based on the gender and type of clothing. I categorized clothing to "Fully clothed" and "Not fully clothed" (Just a random terminology I used) based on the type of clothing. Tshirts and Shorts/Pants or Dresses were labelled as fully clothed. Shirtless pics and swim wear were considered as "Not fully clothed".
+
+I also compared cropping based on 
+    * Saliency score
+    * Saliency score converted into probability
+
+The latter seemed to have a lot more poor performance than the former method and actually contributed to Gender gaze many a time.
+
+Below are some cherry picked examples of male gaze analysis for in the wild images.
+
+The red crop is the crop based on saliency score and the yellow crop is the crop based on saliency score converted into probability.
+
+![h41](https://github.com/PotatoSpudowski/twitter-image-crop-analysis/blob/main/images/harm4-1.png)
+The red crop gets it right. The yellow crop not so much. 
+
+![h42](https://github.com/PotatoSpudowski/twitter-image-crop-analysis/blob/main/images/harm4-2.png)
+Based on a few other images as well, it seems like mirror selfies with the phone at shoulder height have a lot saliency at the body part and may sometimes contribute to cropping of the body region instead of the face. Especially if the phone and the top wear contrast each other.
+
+Few more examples
+
+![h43](https://github.com/PotatoSpudowski/twitter-image-crop-analysis/blob/main/images/harm4-3.png)
+![h44](https://github.com/PotatoSpudowski/twitter-image-crop-analysis/blob/main/images/harm4-4.png)
+
 
 
 ## Evidence/Reproducibility:
@@ -148,6 +180,8 @@ Link to notebook for the experiment
 * [Manipulating Image Saliency by adding Image Artifacts](https://github.com/PotatoSpudowski/twitter-image-crop-analysis/blob/main/notebooks/Demographic-Bias-Analysis-FairFace-Manipulated.ipynb)
 
 * [Bias Based on Body Mass Index/Body Types](https://github.com/PotatoSpudowski/twitter-image-crop-analysis/blob/main/notebooks/Demographic-Bias-Analysis-BMI.ipynb)
+
+* ['Male Gaze' further analysis](https://github.com/PotatoSpudowski/twitter-image-crop-analysis/blob/main/notebooks/Image_Crop_Algorithm_Manipulated_Artifacts_AND_Gender_Gaze_Analysis.ipynb)
 
 ## Self-Grading Recommendation: 
 
@@ -212,4 +246,22 @@ Affects almost everyone.
 **- Clarity:** 1.25  
 
 *********
+
+4. **'Male Gaze' further analysis**
+
+Decision to grade as intentional or unintentional harm: **Unintentional harm**
+
+**- Harm Base Score:** ? 
+
+This harm can cause depression and insecurities to the users of the platform.  
+
+**- Affected Users:** 1.3
+
+Affects almost everyone.
+
+**- Likelihood or Exploitability:** 1.0 
+
+**- Justification:** 1.0 
+
+**- Clarity:** 1.25  
 
