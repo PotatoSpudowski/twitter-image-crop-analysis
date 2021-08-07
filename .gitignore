@@ -147,3 +147,4 @@ data/*
 data/*.jpeg
 notebooks/*.jpeg
 notebooks/*.jpg
+notebooks/*.tsv
