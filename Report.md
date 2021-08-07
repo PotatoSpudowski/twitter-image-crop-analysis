@@ -14,9 +14,9 @@ Below are the list of different experiments performed and harms identified.
 
 Similar to the dataset that the Twitter team used in this [paper](https://arxiv.org/abs/2105.08667) to identify bias between 2 Race, I used the [FairFace dataset](https://github.com/joojs/fairface) to perform bias analysis on an additional 2 races (Indians and East asians) to obtain the following ranking results of different groups(based on race and gender) as seen in this [notebook](https://github.com/PotatoSpudowski/twitter-image-crop-analysis/blob/main/notebooks/Demographic-Bias-Analysis-FairFace.ipynb). 
 
-However, when the "pairing across all group" experiment was performed, I noticed an interesting pattern. The left-most group exhibited very low saliency compared to the other groups. Hence I re-ran the experiment a few times with different ordering of the group in the image and found the same result.
+However, when the "pairing across all group" experiment as seen in the [notebook](https://github.com/twitter-research/image-crop-analysis/blob/main/notebooks/Demographic%20Bias%20Analysis.ipynb) released by twitter was performed, I noticed an interesting pattern. The left-most group exhibited very low saliency compared to the other groups. Hence I re-ran the experiment a few times with different ordering of the group in the image and found the same result.
 
-Here are some results of the experiment.
+Here are the results of the experiment.
 ![h11](https://github.com/PotatoSpudowski/twitter-image-crop-analysis/blob/main/images/harm1-1.png)
 ![h12](https://github.com/PotatoSpudowski/twitter-image-crop-analysis/blob/main/images/harm1-2.png)
 ![h13](https://github.com/PotatoSpudowski/twitter-image-crop-analysis/blob/main/images/harm1-3.png)
@@ -24,24 +24,46 @@ Here are some results of the experiment.
 ![h15](https://github.com/PotatoSpudowski/twitter-image-crop-analysis/blob/main/images/harm1-5.png)
 ![h16](https://github.com/PotatoSpudowski/twitter-image-crop-analysis/blob/main/images/harm1-6.png)
 
-[Describes your results, the harm you have identified (categorized according to a taxonomy provided below), a description of why it is important, and a description of your findings including the qualitative and quantitative methods you used to evaluate this harm’s potential impact on people. ]
+This seems similar to a recent [controversy](https://www.buzzfeednews.com/article/ikrd/vanessa-nakate-greta-thunberg-davos) involving a Ugandan activist who was cropped out of a news agency photograph.
+
 
 ## Evidence/Reproducibility:
-[Evidence / Python Code (preferably a GitHub link) that demonstrates the harm including the data / image file(s) needed to reproduce/verify the harm you identified using your methodology.
+
+Link to the [Github repository](https://github.com/PotatoSpudowski/twitter-image-crop-analysis)
+
+Link to the Datasets I used for the experiments:
+* [FairFace: Face Attribute Dataset for Balanced Race, Gender, and Age](https://github.com/joojs/fairface)
+
+* PNG Artifact images of guns, handcuffs, luxury watches, etc were downloaded using [Fatkun Chrome Extension](https://chrome.google.com/webstore/detail/fatkun-batch-download-ima/nnjjahlikiabnchcpehcpkdeckfgnohf?hl=en). Link to the [dataset](https://drive.google.com/file/d/1KHOMhNPyslhr5UggtL4z2GTZ-2JjQ5Bt/view?usp=sharing).
+
+Download all the dataset files and extract them in the data folder to perform all the experiments.
+
+* **Visual Images to BMI dataset** was obtained from contacting the authors of the [paper](https://ieeexplore.ieee.org/document/8666768)
 
 ## Supporting Material/References:
-[list any additional material (e.g. screenshots, logs, etc.)]
+Link to notebook for the experiment
+
+* [Erasure of Leftmost Face in a Group Picture](https://github.com/twitter-research/image-crop-analysis/blob/main/notebooks/Demographic%20Bias%20Analysis.ipynb)
 
 **Please add the following to "Impact" field below:**
 
-##Self-Grading Recommendation: 
-Description of Harm
-Decision to grade as intentional or unintentional harm
-**- Harm Base Score:** [Numeric Score]  [Brief rationale]
-**- Affected Users: ** [Numeric Score]  [Brief rationale]
-**- Likelihood or Exploitability: ** [Numeric Score]  [Brief rationale]
-**- Justification: ** [Numeric Score]  [Brief rationale]
-**- Clarity: ** [Numeric Score]  [Brief rationale]
-**- Creativity: ** [Numeric Score]  [Brief rationale]
-**- Total Score: ** [Total Score]
+## Self-Grading Recommendation: 
+
+1. **Erasure of Leftmost Face in a Group Picture**
+
+Decision to grade as intentional or unintentional harm: **Unintentional harm**
+
+**- Harm Base Score:** 15 
+
+As seen by the latest controversy involving a Ugandan activist who was cropped out of a news agency photograph. This unintentional harm can have a serious impact on the individual being cropped out. Making them feel inferior compared to the other people in the picture. Based on the severity of the problem I recommended the above base score.
+
+**- Affected Users:** 1.3
+
+Anyone can be affected
+
+**- Likelihood or Exploitability:** 1.0 
+
+**- Justification:** 1.0 
+
+**- Clarity:** 1.25  
 
