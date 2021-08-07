@@ -93,21 +93,51 @@ In order to get a better understanding I performed further tests.
 
 I performed the same experiment with Cheap cars vs Luxury Cars and got the same result. This maybe due to the difference in contrast of expensive and cheap items but such a bias pushes the sterotype that one group is better than the other, and is more suited for the finer things. This severely hurts the underrepresented demographic. Link to [notebook](https://github.com/PotatoSpudowski/twitter-image-crop-analysis/blob/main/notebooks/Demographic-Bias-Analysis-FairFace-Manipulated.ipynb) to recreate the experiment. 
 
+*************
 
+3. **Bias Based on Body Mass Index/Body Types**
+
+**Harm type: Ex-nomination**
+
+Similar to the bias analysis based on gender and race, I performed bias analysis based on gender and body type. The dataset I used for this purpose was the [Visual Images to BMI dataset](https://ieeexplore.ieee.org/document/8666768). Below are the results of the experiment.
+
+**For Women**
+
+Body Types
+N-0 = Normal 
+O-b = Obese
+O-v = Overweight
+
+![h31](https://github.com/PotatoSpudowski/twitter-image-crop-analysis/blob/main/images/harm3-1.png)
+![h32](https://github.com/PotatoSpudowski/twitter-image-crop-analysis/blob/main/images/harm3-2.png)
+
+Based on the results, It seems like the algorithm seems to give more priority to the obese and overweight female body types more than Normal.
+What about for men? Is it the same?
+
+**For Men**
+
+![h33](https://github.com/PotatoSpudowski/twitter-image-crop-analysis/blob/main/images/harm3-3.png)
+![h34](https://github.com/PotatoSpudowski/twitter-image-crop-analysis/blob/main/images/harm3-4.png)
+
+For men, the algorithm gives the least priority to obese body types. 
+
+It is important to ensure that such algorithms are not biased based on body types because they consider certain body types as central human norms. Lots of people suffer from body insecurity and such a harm would only amplify the insecurity of the users.
 
 
 ## Evidence/Reproducibility:
 
 Link to the [Github repository](https://github.com/PotatoSpudowski/twitter-image-crop-analysis)
+This repository is based off of the twitter repository. All the notebooks I used for the experiments are in the notebook folder.
+In the Supporting Material/References section, I have given notebook links to all the experiments.
 
 Link to the Datasets I used for the experiments:
 * [FairFace: Face Attribute Dataset for Balanced Race, Gender, and Age](https://github.com/joojs/fairface)
 
 * PNG Artifact images of guns, handcuffs, luxury watches, etc were downloaded using [Fatkun Chrome Extension](https://chrome.google.com/webstore/detail/fatkun-batch-download-ima/nnjjahlikiabnchcpehcpkdeckfgnohf?hl=en). Link to the [dataset](https://drive.google.com/file/d/1KHOMhNPyslhr5UggtL4z2GTZ-2JjQ5Bt/view?usp=sharing).
 
-Download all the dataset files and extract them in the data folder to perform all the experiments.
-
 * **Visual Images to BMI dataset** was obtained from contacting the authors of the [paper](https://ieeexplore.ieee.org/document/8666768)
+
+Download all the dataset files and extract them in the data folder to perform all the experiments.
 
 ## Supporting Material/References:
 Link to notebook for the experiment
@@ -116,7 +146,7 @@ Link to notebook for the experiment
 
 * [Manipulating Image Saliency by adding Image Artifacts](https://github.com/PotatoSpudowski/twitter-image-crop-analysis/blob/main/notebooks/Demographic-Bias-Analysis-FairFace-Manipulated.ipynb)
 
-
+* [Bias Based on Body Mass Index/Body Types](https://github.com/PotatoSpudowski/twitter-image-crop-analysis/blob/main/notebooks/Demographic-Bias-Analysis-BMI.ipynb)
 
 ## Self-Grading Recommendation: 
 
@@ -159,4 +189,26 @@ Lots of users from underrepresented demographic use twitter and they might be af
 **- Justification:** 1.0 
 
 **- Clarity:** 1.25  
+
+*********
+
+3. **Bias Based on Body Mass Index/Body Types**
+
+Decision to grade as intentional or unintentional harm: **Unintentional harm**
+
+**- Harm Base Score:** 20 
+
+This harm can cause depression and insecurities to the users of the platform.  
+
+**- Affected Users:** 1.3
+
+Affects almost everyone.
+
+**- Likelihood or Exploitability:** 1.0 
+
+**- Justification:** 1.0 
+
+**- Clarity:** 1.25  
+
+*********
 
