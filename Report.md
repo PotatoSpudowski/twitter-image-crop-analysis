@@ -17,12 +17,12 @@ Similar to the dataset that the Twitter team used in this [paper](https://arxiv.
 However, when I performed the "pairing across all group" experiment as seen in the [notebook](https://github.com/twitter-research/image-crop-analysis/blob/main/notebooks/Demographic%20Bias%20Analysis.ipynb) released by twitter, I noticed an interesting pattern. The left-most group exhibited very low saliency compared to the other groups. Hence I re-ran the experiment a few times with different ordering of the group in the image and found the same result.
 
 Here are the results of the experiment.
-![h11](https://github.com/PotatoSpudowski/twitter-image-crop-analysis/blob/main/images/harm1-1.png)
-![h12](https://github.com/PotatoSpudowski/twitter-image-crop-analysis/blob/main/images/harm1-2.png)
-![h13](https://github.com/PotatoSpudowski/twitter-image-crop-analysis/blob/main/images/harm1-3.png)
-![h14](https://github.com/PotatoSpudowski/twitter-image-crop-analysis/blob/main/images/harm1-4.png)
-![h15](https://github.com/PotatoSpudowski/twitter-image-crop-analysis/blob/main/images/harm1-5.png)
-![h16](https://github.com/PotatoSpudowski/twitter-image-crop-analysis/blob/main/images/harm1-6.png)
+![h11](https://raw.githubusercontent.com/PotatoSpudowski/twitter-image-crop-analysis/main/images/harm1-1.png)
+![h12](https://raw.githubusercontent.com/PotatoSpudowski/twitter-image-crop-analysis/main/images/harm1-2.png)
+![h13](https://raw.githubusercontent.com/PotatoSpudowski/twitter-image-crop-analysis/main/images/harm1-3.png)
+![h14](https://raw.githubusercontent.com/PotatoSpudowski/twitter-image-crop-analysis/main/images/harm1-4.png)
+![h15](https://raw.githubusercontent.com/PotatoSpudowski/twitter-image-crop-analysis/main/images/harm1-5.png)
+![h16](https://raw.githubusercontent.com/PotatoSpudowski/twitter-image-crop-analysis/main/images/harm1-6.png)
 
 This seems similar to a recent [controversy](https://www.buzzfeednews.com/article/ikrd/vanessa-nakate-greta-thunberg-davos) involving a Ugandan activist who was cropped out of a news agency photograph.
 
@@ -36,7 +36,7 @@ I used the [Fatkun Chrome Extension](https://chrome.google.com/webstore/detail/f
 
 Below is the distribution for the normal dataset involving 2 races (Black and White) and 2 genders (Male and Female).
 
-![h21](https://github.com/PotatoSpudowski/twitter-image-crop-analysis/blob/main/images/harm2-2.png)
+![h21](https://raw.githubusercontent.com/PotatoSpudowski/twitter-image-crop-analysis/main/images/harm2-2.png)
 
 The groups entered are: [('Black', 'Female'), ('Black', 'Male'), ('White', 'Female'), ('White', 'Male')]
 
@@ -45,35 +45,35 @@ The statistic is: [496. 266. 665. 573.]
 
 Now by creating manipulated images as shown below, I ran multiple experiments.
 
-![h22](https://github.com/PotatoSpudowski/twitter-image-crop-analysis/blob/main/images/harm2-1.png)
+![h22](https://raw.githubusercontent.com/PotatoSpudowski/twitter-image-crop-analysis/main/images/harm2-1.png)
 
 **With Gun Artifacts**
 
-![h23](https://github.com/PotatoSpudowski/twitter-image-crop-analysis/blob/main/images/harm2-3.png)
+![h23](https://raw.githubusercontent.com/PotatoSpudowski/twitter-image-crop-analysis/main/images/harm2-3.png)
 
 The statistic is: [546. 294. 640. 520.]
 
 **With HandCuff Artifacts**
 
-![h24](https://github.com/PotatoSpudowski/twitter-image-crop-analysis/blob/main/images/harm2-4.png)
+![h24](https://raw.githubusercontent.com/PotatoSpudowski/twitter-image-crop-analysis/main/images/harm2-4.png)
 
 The statistic is: [531. 302. 628. 539.]
 
 **With Luxury Watches Artifacts**
 
-![h25](https://github.com/PotatoSpudowski/twitter-image-crop-analysis/blob/main/images/harm2-5.png)
+![h25](https://raw.githubusercontent.com/PotatoSpudowski/twitter-image-crop-analysis/main/images/harm2-5.png)
 
 The statistic is: [539. 302. 640. 519.]
 
 **With Cheap Cars Artifacts**
 
-![h26](https://github.com/PotatoSpudowski/twitter-image-crop-analysis/blob/main/images/harm2-6.png)
+![h26](https://raw.githubusercontent.com/PotatoSpudowski/twitter-image-crop-analysis/main/images/harm2-6.png)
 
 The statistic is: [587. 291. 567. 555.]
 
 **With Luxury Cars Artifacts**
 
-![h27](https://github.com/PotatoSpudowski/twitter-image-crop-analysis/blob/main/images/harm2-7.png)
+![h27](https://raw.githubusercontent.com/PotatoSpudowski/twitter-image-crop-analysis/main/images/harm2-7.png)
 
 The statistic is: [559. 300. 593. 548.]
 
@@ -85,11 +85,11 @@ In order to get a better understanding I performed further tests.
 
 **Black males:- Handcuffs vs Luxury watches**
 
-![h28](https://github.com/PotatoSpudowski/twitter-image-crop-analysis/blob/main/images/harm2-8.png)
+![h28](https://raw.githubusercontent.com/PotatoSpudowski/twitter-image-crop-analysis/main/images/harm2-8.png)
 
 **White Females:- Handcuffs vs Luxury watches**
 
-![h29](https://github.com/PotatoSpudowski/twitter-image-crop-analysis/blob/main/images/harm2-9.png)
+![h29](https://raw.githubusercontent.com/PotatoSpudowski/twitter-image-crop-analysis/main/images/harm2-9.png)
 
 I performed the same experiment with Cheap cars vs Luxury Cars and got the same result. This maybe due to the difference in contrast of expensive and cheap items but such a bias pushes the sterotype that one group is better than the other, and is more suited for the finer things. This severely hurts the underrepresented demographic. Link to [notebook](https://github.com/PotatoSpudowski/twitter-image-crop-analysis/blob/main/notebooks/Demographic-Bias-Analysis-FairFace-Manipulated.ipynb) to recreate the experiment. 
 
@@ -111,16 +111,16 @@ O-b = Obese,
 
 O-v = Overweight
 
-![h31](https://github.com/PotatoSpudowski/twitter-image-crop-analysis/blob/main/images/harm3-1.png)
-![h32](https://github.com/PotatoSpudowski/twitter-image-crop-analysis/blob/main/images/harm3-2.png)
+![h31](https://raw.githubusercontent.com/PotatoSpudowski/twitter-image-crop-analysis/main/images/harm3-1.png)
+![h32](https://raw.githubusercontent.com/PotatoSpudowski/twitter-image-crop-analysis/main/images/harm3-2.png)
 
 Based on the results, It seems like the algorithm seems to give more priority to the obese and overweight female body types more than Normal.
 What about for men? Is it the same?
 
 **For Men**
 
-![h33](https://github.com/PotatoSpudowski/twitter-image-crop-analysis/blob/main/images/harm3-3.png)
-![h34](https://github.com/PotatoSpudowski/twitter-image-crop-analysis/blob/main/images/harm3-4.png)
+![h33](https://raw.githubusercontent.com/PotatoSpudowski/twitter-image-crop-analysis/main/images/harm3-3.png)
+![h34](https://raw.githubusercontent.com/PotatoSpudowski/twitter-image-crop-analysis/main/images/harm3-4.png)
 
 For men, the algorithm gives the least priority to obese body types. 
 
@@ -135,27 +135,27 @@ It is important to ensure that such algorithms are not biased based on body type
 This experiment was an extension of Twitter's work. I was curious to see what other body artifacts contribute to male gaze. I was also interested in seeing if different types of clothing contribute to male gaze. So I used the **Visual Image to BMI** and created a small dataset of 4 classes based on the gender and type of clothing. I categorized clothing to "Fully clothed" and "Not fully clothed" (Just a random terminology I used) based on the type of clothing. Tshirts and Shorts/Pants or Dresses were labelled as fully clothed. Shirtless pics and swim wear were considered as "Not fully clothed".
 
 I also compared cropping based on 
-    * Saliency score
-    * Saliency score converted into probability
+1. Saliency score
+2. Saliency score converted into probability
 
-The latter seemed to have a lot more poor performance than the former method and actually contributed to Gender gaze many a time.
+The second method performed poorly compared to the first method and actually contributed to Gender gaze many a times.
 
 Below are some cherry picked examples of male gaze analysis for in the wild images.
 
-The red crop is the crop based on saliency score and the yellow crop is the crop based on saliency score converted into probability.
+**The red crop is the crop based on saliency score and the yellow crop is the crop based on saliency score converted into probability.**
 
-![h41](https://github.com/PotatoSpudowski/twitter-image-crop-analysis/blob/main/images/harm4-1.png)
+![h41](https://raw.githubusercontent.com/PotatoSpudowski/twitter-image-crop-analysis/main/images/harm4-1.png)
 
 The red crop gets it right. The yellow crop not so much. 
 
-![h42](https://github.com/PotatoSpudowski/twitter-image-crop-analysis/blob/main/images/harm4-2.png)
+![h42](https://raw.githubusercontent.com/PotatoSpudowski/twitter-image-crop-analysis/main/images/harm4-2.png)
 
 Based on a few other images as well, it seems like mirror selfies with the phone at shoulder height have a lot saliency at the body part and may sometimes contribute to cropping of the body region instead of the face. Especially if the phone and the top wear contrast each other.
 
 Few more examples
 
-![h43](https://github.com/PotatoSpudowski/twitter-image-crop-analysis/blob/main/images/harm4-3.png)
-![h44](https://github.com/PotatoSpudowski/twitter-image-crop-analysis/blob/main/images/harm4-4.png)
+![h43](https://raw.githubusercontent.com/PotatoSpudowski/twitter-image-crop-analysis/main/images/harm4-3.png)
+![h44](https://raw.githubusercontent.com/PotatoSpudowski/twitter-image-crop-analysis/main/images/harm4-4.png)
 
 
 
