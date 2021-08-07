@@ -103,9 +103,10 @@ Similar to the bias analysis based on gender and race, I performed bias analysis
 
 **For Women**
 
-Body Types
-N-0 = Normal 
-O-b = Obese
+Body Types:
+
+N-0 = Normal,  
+O-b = Obese, 
 O-v = Overweight
 
 ![h31](https://github.com/PotatoSpudowski/twitter-image-crop-analysis/blob/main/images/harm3-1.png)
