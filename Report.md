@@ -14,7 +14,7 @@ Below are the list of different experiments performed and harms identified.
 
 Similar to the dataset that the Twitter team used in this [paper](https://arxiv.org/abs/2105.08667) to identify bias between 2 Race, I used the [FairFace dataset](https://github.com/joojs/fairface) to perform bias analysis on an additional 2 races (Indians and East asians) to obtain the following ranking results of different groups(based on race and gender) as seen in this [notebook](https://github.com/PotatoSpudowski/twitter-image-crop-analysis/blob/main/notebooks/Demographic-Bias-Analysis-FairFace.ipynb). 
 
-However, when the "pairing across all group" experiment as seen in the [notebook](https://github.com/twitter-research/image-crop-analysis/blob/main/notebooks/Demographic%20Bias%20Analysis.ipynb) released by twitter was performed, I noticed an interesting pattern. The left-most group exhibited very low saliency compared to the other groups. Hence I re-ran the experiment a few times with different ordering of the group in the image and found the same result.
+However, when I performed the "pairing across all group" experiment as seen in the [notebook](https://github.com/twitter-research/image-crop-analysis/blob/main/notebooks/Demographic%20Bias%20Analysis.ipynb) released by twitter, I noticed an interesting pattern. The left-most group exhibited very low saliency compared to the other groups. Hence I re-ran the experiment a few times with different ordering of the group in the image and found the same result.
 
 Here are the results of the experiment.
 ![h11](https://github.com/PotatoSpudowski/twitter-image-crop-analysis/blob/main/images/harm1-1.png)
@@ -25,6 +25,8 @@ Here are the results of the experiment.
 ![h16](https://github.com/PotatoSpudowski/twitter-image-crop-analysis/blob/main/images/harm1-6.png)
 
 This seems similar to a recent [controversy](https://www.buzzfeednews.com/article/ikrd/vanessa-nakate-greta-thunberg-davos) involving a Ugandan activist who was cropped out of a news agency photograph.
+
+*************
 
 2. **Manipulating Image Saliency by adding Image Artifacts**
 
@@ -89,7 +91,7 @@ In order to get a better understanding I performed further tests.
 
 ![h29](https://github.com/PotatoSpudowski/twitter-image-crop-analysis/blob/main/images/harm2-9.png)
 
-I performed the same experiment with Cheap cars vs Luxury Cars and got the same result. This maybe due to the difference in contrast of expensive and cheap items but such a bias pushes the sterotype that one group is better than the other, and is more suited with the finer things. This severely hurts the underrepresented demographic.
+I performed the same experiment with Cheap cars vs Luxury Cars and got the same result. This maybe due to the difference in contrast of expensive and cheap items but such a bias pushes the sterotype that one group is better than the other, and is more suited for the finer things. This severely hurts the underrepresented demographic. Link to [notebook](https://github.com/PotatoSpudowski/twitter-image-crop-analysis/blob/main/notebooks/Demographic-Bias-Analysis-FairFace-Manipulated.ipynb) to recreate the experiment. 
 
 
 
@@ -112,7 +114,9 @@ Link to notebook for the experiment
 
 * [Erasure of Leftmost Face in a Group Picture](https://github.com/twitter-research/image-crop-analysis/blob/main/notebooks/Demographic%20Bias%20Analysis.ipynb)
 
-**Please add the following to "Impact" field below:**
+* [Manipulating Image Saliency by adding Image Artifacts](https://github.com/PotatoSpudowski/twitter-image-crop-analysis/blob/main/notebooks/Demographic-Bias-Analysis-FairFace-Manipulated.ipynb)
+
+
 
 ## Self-Grading Recommendation: 
 
@@ -127,6 +131,28 @@ As seen by the latest controversy involving a Ugandan activist who was cropped o
 **- Affected Users:** 1.3
 
 Anyone can be affected
+
+**- Likelihood or Exploitability:** 1.0 
+
+**- Justification:** 1.0 
+
+**- Clarity:** 1.25 
+
+
+*******************
+
+2. **Manipulating Image Saliency by adding Image Artifacts**
+
+Decision to grade as intentional or unintentional harm: **Unintentional harm**
+
+**- Harm Base Score:** 20 
+
+This type of harm can cause sever damage to the underrepresented demographic. 
+For example, If there are 2 successful people in the picture and the AI crops out the black person.
+
+**- Affected Users:** 1.3
+
+Lots of users from underrepresented demographic use twitter and they might be affected by it.
 
 **- Likelihood or Exploitability:** 1.0 
 
